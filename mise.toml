@@ -1,3 +1,6 @@
 [tools]
 go = "latest"
 air = "latest"
+
+[tasks.flatten_pdf]
+run = "qpdf --stream-data=uncompress --object-streams=disable pdf_template.pdf pdf_template_flat.pdf"
